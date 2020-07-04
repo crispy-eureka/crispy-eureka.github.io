@@ -12,18 +12,20 @@
     
     <meta name="keywords" content="manual" />
     
-    <meta name="description" content="去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。主要参考资料：Hexo官方文档 https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;Hexo史上最全搭建教程@zjufangzh https:&#x2F;&#x2F;blog.csdn.net&#x2F;sinat_37781304&#x2F;article&#x2F;details&#x2F;82729029 #S1 安装包括运行所需要的软件Node.">
+    <meta name="description" content="去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。主要参考资料：Hexo官方文档 https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;Hexo史上最全搭建教程@zjufangzh https:&#x2F;&#x2F;blog.csdn.net&#x2F;sinat_37781304&#x2F;article&#x2F;details&#x2F;82729029 S1 安装包括运行所需要的软件Node.j">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo建站查询手册">
 <meta property="og:url" content="http://mxuan.fun/2020/07/04/Hexo/index.html">
 <meta property="og:site_name" content="花田博客">
-<meta property="og:description" content="去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。主要参考资料：Hexo官方文档 https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;Hexo史上最全搭建教程@zjufangzh https:&#x2F;&#x2F;blog.csdn.net&#x2F;sinat_37781304&#x2F;article&#x2F;details&#x2F;82729029 #S1 安装包括运行所需要的软件Node.">
+<meta property="og:description" content="去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。主要参考资料：Hexo官方文档 https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;Hexo史上最全搭建教程@zjufangzh https:&#x2F;&#x2F;blog.csdn.net&#x2F;sinat_37781304&#x2F;article&#x2F;details&#x2F;82729029 S1 安装包括运行所需要的软件Node.j">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://mxuan.fun/images/flow.jpg">
 <meta property="article:published_time" content="2020-07-04T07:40:07.000Z">
-<meta property="article:modified_time" content="2020-07-04T13:14:08.841Z">
+<meta property="article:modified_time" content="2020-07-04T13:38:59.243Z">
 <meta property="article:author" content="Mason Y.">
 <meta property="article:tag" content="manual">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://mxuan.fun/images/flow.jpg">
     
 
     
@@ -55,10 +57,6 @@
 <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
 
     
-    
-        
-<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
-
     
     
     
@@ -204,25 +202,19 @@
 
             
 
-            <p>去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。<br>主要参考资料：<br>Hexo官方文档 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a><br>Hexo史上最全搭建教程@zjufangzh <a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/article/details/82729029</a></p>
-<p>#S1 安装<br>包括运行所需要的软件Node.js和Git，可以额外选用一个代码编辑器（我选用了Atom）。然后使用代码安装Hexo程序，并完成初始化。具体可见Hexo官方文档<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
-<p>#S2 配置</p>
-<p>##2.1 一般配置，包括之后生成网页的站点名称、标签图标、网站描述等等。具体参数配置见官方文档 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration</a></p>
-<p>##2.2 特殊配置</p>
-<p>###2.2.1 主题 <a href="https://hexo.io/zh-cn/docs/themes" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/themes</a></p>
-<p>###2.2.2 永久链接 <a href="https://hexo.io/zh-cn/docs/permalinks" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/permalinks</a></p>
-<p>#S3 生成与部署</p>
-<p>##3.1 页面生成<br><code>$ hexo generate</code><br>简写为<br><code>$ hexo g</code><br>详见 <a href="https://hexo.io/zh-cn/docs/generating" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/generating</a><br>##3.2 部署</p>
-<p>###3.2.1 本地部署<br>安装 hexo-server<br><code>$ npm install hexo-server --save</code><br>部署<br><code>$ hexo server</code><br>详见 <a href="https://hexo.io/zh-cn/docs/server" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/server</a></p>
-<p>###3.2.2 部署到Github<br>本节摘编自：<a href="https://blog.csdn.net/sinat_37781304/java/article/details/82729029" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/java/article/details/82729029</a><br>（似乎这里并不是最早出处，暂不讨论）</p>
-<p>#####3.2.2.1 GitHub创建个人仓库<br>注册并登录GitHub账户，在GitHub.com中看到一个New repository，新建仓库，创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。见 <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository" target="_blank" rel="noopener">https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository</a></p>
-<p>#####3.2.2.2 生成SSH添加到GitHub<br>回到你的git bash中，<br><code>git config --global user.name &quot;yourname&quot;</code><br><code>git config --global user.email &quot;youremail&quot;</code><br>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。<br>可以用以下两条，检查一下你有没有输对<br><code>git config user.name</code><br><code>git config user.email</code><br>然后创建SSH,一路回车<br><code>ssh-keygen -t rsa -C &quot;youremail&quot;</code><br>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。<br>而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key<br>把你的id_rsa.pub里面的信息复制进去。<br>在gitbash中，查看是否成功<br><code>ssh -T git@github.com</code></p>
-<p>#####3.2.2.3 将hexo部署到GitHub<br>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件_config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
+            <p><img src="/images/flow.jpg" alt=""><br>去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。<br>主要参考资料：<br>Hexo官方文档 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a><br>Hexo史上最全搭建教程@zjufangzh <a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/article/details/82729029</a></p>
+<h1 id="S1-安装"><a href="#S1-安装" class="headerlink" title="S1 安装"></a>S1 安装</h1><p>包括运行所需要的软件Node.js和Git，可以额外选用一个代码编辑器（我选用了Atom）。然后使用代码安装Hexo程序，并完成初始化。具体可见Hexo官方文档<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
+<h1 id="S2-配置"><a href="#S2-配置" class="headerlink" title="S2 配置"></a>S2 配置</h1><h2 id="2-1-一般配置，包括之后生成网页的站点名称、标签图标、网站描述等等。具体参数配置见官方文档-https-hexo-io-zh-cn-docs-configuration"><a href="#2-1-一般配置，包括之后生成网页的站点名称、标签图标、网站描述等等。具体参数配置见官方文档-https-hexo-io-zh-cn-docs-configuration" class="headerlink" title="2.1 一般配置，包括之后生成网页的站点名称、标签图标、网站描述等等。具体参数配置见官方文档 https://hexo.io/zh-cn/docs/configuration"></a>2.1 一般配置，包括之后生成网页的站点名称、标签图标、网站描述等等。具体参数配置见官方文档 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration</a></h2><h2 id="2-2-特殊配置"><a href="#2-2-特殊配置" class="headerlink" title="2.2 特殊配置"></a>2.2 特殊配置</h2><h3 id="2-2-1-主题-https-hexo-io-zh-cn-docs-themes"><a href="#2-2-1-主题-https-hexo-io-zh-cn-docs-themes" class="headerlink" title="2.2.1 主题 https://hexo.io/zh-cn/docs/themes"></a>2.2.1 主题 <a href="https://hexo.io/zh-cn/docs/themes" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/themes</a></h3><h3 id="2-2-2-永久链接-https-hexo-io-zh-cn-docs-permalinks"><a href="#2-2-2-永久链接-https-hexo-io-zh-cn-docs-permalinks" class="headerlink" title="2.2.2 永久链接 https://hexo.io/zh-cn/docs/permalinks"></a>2.2.2 永久链接 <a href="https://hexo.io/zh-cn/docs/permalinks" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/permalinks</a></h3><h1 id="S3-生成与部署"><a href="#S3-生成与部署" class="headerlink" title="S3 生成与部署"></a>S3 生成与部署</h1><h2 id="3-1-页面生成"><a href="#3-1-页面生成" class="headerlink" title="3.1 页面生成"></a>3.1 页面生成</h2><p><code>$ hexo generate</code><br>简写为<br><code>$ hexo g</code><br>详见 <a href="https://hexo.io/zh-cn/docs/generating" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/generating</a></p>
+<h2 id="3-2-部署"><a href="#3-2-部署" class="headerlink" title="3.2 部署"></a>3.2 部署</h2><h3 id="3-2-1-本地部署"><a href="#3-2-1-本地部署" class="headerlink" title="3.2.1 本地部署"></a>3.2.1 本地部署</h3><p>安装 hexo-server<br><code>$ npm install hexo-server --save</code><br>部署<br><code>$ hexo server</code><br>详见 <a href="https://hexo.io/zh-cn/docs/server" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/server</a></p>
+<h3 id="3-2-2-部署到Github"><a href="#3-2-2-部署到Github" class="headerlink" title="3.2.2 部署到Github"></a>3.2.2 部署到Github</h3><p>本节摘编自：<a href="https://blog.csdn.net/sinat_37781304/java/article/details/82729029" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/java/article/details/82729029</a><br>（似乎这里并不是最早出处，暂不讨论）</p>
+<h5 id="3-2-2-1-GitHub创建个人仓库"><a href="#3-2-2-1-GitHub创建个人仓库" class="headerlink" title="3.2.2.1 GitHub创建个人仓库"></a>3.2.2.1 GitHub创建个人仓库</h5><p>注册并登录GitHub账户，在GitHub.com中看到一个New repository，新建仓库，创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。见 <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository" target="_blank" rel="noopener">https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository</a></p>
+<h5 id="3-2-2-2-生成SSH添加到GitHub"><a href="#3-2-2-2-生成SSH添加到GitHub" class="headerlink" title="3.2.2.2 生成SSH添加到GitHub"></a>3.2.2.2 生成SSH添加到GitHub</h5><p>回到你的git bash中，<br><code>git config --global user.name &quot;yourname&quot;</code><br><code>git config --global user.email &quot;youremail&quot;</code><br>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。<br>可以用以下两条，检查一下你有没有输对<br><code>git config user.name</code><br><code>git config user.email</code><br>然后创建SSH,一路回车<br><code>ssh-keygen -t rsa -C &quot;youremail&quot;</code><br>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。<br>而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key<br>把你的id_rsa.pub里面的信息复制进去。<br>在gitbash中，查看是否成功<br><code>ssh -T git@github.com</code></p>
+<h5 id="3-2-2-3-将hexo部署到GitHub"><a href="#3-2-2-3-将hexo部署到GitHub" class="headerlink" title="3.2.2.3 将hexo部署到GitHub"></a>3.2.2.3 将hexo部署到GitHub</h5><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件_config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;YourgithubName&#x2F;YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。<br><code>npm install hexo-deployer-git --save</code><br>然后</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 <p>其中<code>hexo clean</code>清除了你之前生成的东西，也可以不加。<br><code>hexo generate</code>顾名思义，生成静态文章，可以用<code>hexo g</code>缩写<br><code>hexo deploy</code>部署文章，可以用<code>hexo d</code>缩写<br>注意deploy时可能要你输入username和password。<br>过一会儿就可以在<a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 这个网站看到你的博客了</p>
-<p>#####3.2.2.4 设置个人域名<br>现在你的个人网站的地址是 yourname.github.io，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。<br>注册一个阿里云账户,在阿里云上买一个域名，你需要先去进行实名认证,然后在域名控制台中，看到你购买的域名。使用电脑的命令提示符ping出你的网页的服务器地址，添加解析。</p>
+<h5 id="3-2-2-4-设置个人域名"><a href="#3-2-2-4-设置个人域名" class="headerlink" title="3.2.2.4 设置个人域名"></a>3.2.2.4 设置个人域名</h5><p>现在你的个人网站的地址是 yourname.github.io，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。<br>注册一个阿里云账户,在阿里云上买一个域名，你需要先去进行实名认证,然后在域名控制台中，看到你购买的域名。使用电脑的命令提示符ping出你的网页的服务器地址，添加解析。</p>
 <p>登录GitHub，进入之前创建的仓库，点击settings，设置Custom domain，输入你的域名<br>然后在你的博客文件source中创建一个名为CNAME文件，不要后缀。写上你的域名。</p>
 <p>最后，在gitbash中，输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
@@ -234,7 +226,7 @@
 
 
 
-    <a data-url="http://mxuan.fun/2020/07/04/Hexo/" data-id="ckc7odjvv0002a0c65q5f1hra" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://mxuan.fun/2020/07/04/Hexo/" data-id="ckc7p3vei000228c60ijyehgg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -305,7 +297,7 @@
             "name": "Mason Y."
         },
         "headline": "Hexo建站查询手册",
-        "image": "http://mxuan.fun",
+        "image": "http://mxuan.fun/images/flow.jpg",
         "keywords": "manual",
         "genre": "",
         "datePublished": "2020-07-04",
@@ -313,21 +305,14 @@
         "dateModified": "2020-07-04",
         "url": "http://mxuan.fun/2020/07/04/Hexo/",
         "description": "去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。主要参考资料：Hexo官方文档 https://hexo.io/zh-cn/docs/Hexo史上最全搭建教程@zjufangzh https://blog.csdn.net/sinat_37781304/article/details/82729029
-#S1 安装包括运行所需要的软件Node.",
-        "wordCount": 151
+S1 安装包括运行所需要的软件Node.j",
+        "wordCount": 231
     }
 </script>
 
 </article>
 
     <section id="comments">
-    
-        
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-    </div>
-
-
     
     </section>
 
@@ -360,9 +345,9 @@
 <nav id="article-nav">
     
     
-        <a href="/2019/11/04/Recovery/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/10/29/Day-One/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">上一篇</strong>
-        <p class="article-nav-title">Recovery</p>
+        <p class="article-nav-title">Day One</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -376,7 +361,7 @@
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/diary/" style="font-size: 20px;">diary</a> <a href="/tags/manual/" style="font-size: 10px;">manual</a> <a href="/tags/system/" style="font-size: 10px;">system</a>
+            <a href="/tags/diary/" style="font-size: 10px;">diary</a> <a href="/tags/manual/" style="font-size: 10px;">manual</a>
         </div>
     </div>
 
@@ -394,7 +379,7 @@
                             <a href="/2020/07/04/Hexo/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(/images/flow.jpg)" alt="Hexo建站查询手册" class="thumbnail-image"></span>
     
     
 </a>
@@ -405,46 +390,6 @@
                             <p class="item-category"></p>
                             <p class="item-title"><a href="/2020/07/04/Hexo/" class="title">Hexo建站查询手册</a></p>
                             <p class="item-date"><time datetime="2020-07-04T07:40:07.000Z" itemprop="datePublished">2020-07-04</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/11/04/Recovery/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/latespring.jpg)" alt="Recovery" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/11/04/Recovery/" class="title">Recovery</a></p>
-                            <p class="item-date"><time datetime="2019-11-04T15:27:40.000Z" itemprop="datePublished">2019-11-04</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/11/02/Step-Two/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/funonmonday.jpg)" alt="Step Two" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/11/02/Step-Two/" class="title">Step Two</a></p>
-                            <p class="item-date"><time datetime="2019-11-02T12:31:00.000Z" itemprop="datePublished">2019-11-02</time></p>
                         </div>
                     </li>
                 
@@ -480,7 +425,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -534,24 +479,6 @@
 
     </div>
     
-    
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    var disqus_url = 'http://mxuan.fun/2020/07/04/Hexo/';
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-
-
-
 
 
     
@@ -583,10 +510,6 @@
 <script src="/libs/lightgallery/js/lg-video.min.js"></script>
 
     
-    
-        
-<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
-
     
     
 
