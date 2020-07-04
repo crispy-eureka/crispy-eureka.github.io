@@ -1,240 +1,605 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
+    <meta charset="utf-8" />
 
-  
-  <title>Hexo建站查询手册 | 花田博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="去年花了很多时间玩Hexo，大半年过去了，现在差不多忘得一干二净。果然得自己编辑一份使用说明才行的。以下分步骤总结Hexo搭建个人网站全过程。S1 安装包括运行所需要的软件Node.js和Git，可以额外选用一个代码编辑器（我选用了Atom）。然后使用代码安装Hexo程序，并完成初始化。具体可见Hexo官方文档https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;S2 配置2.1 一般配置，包括之">
+    
+
+    
+    <title>Hexo建站查询手册 | 花田博客</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="manual" />
+    
+    <meta name="description" content="去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。主要参考资料：Hexo官方文档 https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;Hexo史上最全搭建教程@zjufangzh https:&#x2F;&#x2F;blog.csdn.net&#x2F;sinat_37781304&#x2F;article&#x2F;details&#x2F;82729029 #S1 安装包括运行所需要的软件Node.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo建站查询手册">
 <meta property="og:url" content="http://mxuan.fun/2020/07/04/Hexo/index.html">
 <meta property="og:site_name" content="花田博客">
-<meta property="og:description" content="去年花了很多时间玩Hexo，大半年过去了，现在差不多忘得一干二净。果然得自己编辑一份使用说明才行的。以下分步骤总结Hexo搭建个人网站全过程。S1 安装包括运行所需要的软件Node.js和Git，可以额外选用一个代码编辑器（我选用了Atom）。然后使用代码安装Hexo程序，并完成初始化。具体可见Hexo官方文档https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;S2 配置2.1 一般配置，包括之">
+<meta property="og:description" content="去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。主要参考资料：Hexo官方文档 https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;Hexo史上最全搭建教程@zjufangzh https:&#x2F;&#x2F;blog.csdn.net&#x2F;sinat_37781304&#x2F;article&#x2F;details&#x2F;82729029 #S1 安装包括运行所需要的软件Node.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-04T07:40:07.000Z">
-<meta property="article:modified_time" content="2020-07-04T10:00:02.247Z">
+<meta property="article:modified_time" content="2020-07-04T13:14:08.841Z">
 <meta property="article:author" content="Mason Y.">
 <meta property="article:tag" content="manual">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="花田博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
+    
+
+    
+
+    
+        <link rel="icon" href="/css/images/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
 <link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
 
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 <body>
-  <div id="container">
     <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">花田博客</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Experience</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://mxuan.fun"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/04/Hexo/" class="article-date">
-  <time datetime="2020-07-04T07:40:07.000Z" itemprop="datePublished">2020-07-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hexo建站查询手册
-    </h1>
-  
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">Experience</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
 
-      </header>
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>去年花了很多时间玩Hexo，大半年过去了，现在差不多忘得一干二净。果然得自己编辑一份使用说明才行的。以下分步骤总结Hexo搭建个人网站全过程。<br>S1 安装<br>包括运行所需要的软件Node.js和Git，可以额外选用一个代码编辑器（我选用了Atom）。然后使用代码安装Hexo程序，并完成初始化。具体可见Hexo官方文档<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a><br>S2 配置<br>2.1 一般配置，包括之后生成网页的站点名称、标签图标、网站描述等等。具体参数配置见官方文档 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration</a><br>2.2 特殊配置<br>2.2.1 主题 <a href="https://hexo.io/zh-cn/docs/themes" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/themes</a><br>2.2.2 永久链接 <a href="https://hexo.io/zh-cn/docs/permalinks" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/permalinks</a><br>S3 生成与部署<br>3.1 页面生成<br>$ hexo generate<br>简写为<br>$ hexo g<br>详见 <a href="https://hexo.io/zh-cn/docs/generating" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/generating</a><br>3.2 部署<br>3.2.1 本地部署<br>安装 hexo-server<br>$ npm install hexo-server –save<br>部署<br>$ hexo server<br>详见 <a href="https://hexo.io/zh-cn/docs/server" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/server</a><br>3.2.2 部署到Github<br>本节摘编自：<a href="https://blog.csdn.net/sinat_37781304/java/article/details/82729029" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/java/article/details/82729029</a><br>（似乎这里并不是最早出处，暂不讨论）<br>3.2.2.1 GitHub创建个人仓库<br>注册并登录GitHub账户，在GitHub.com中看到一个New repository，新建仓库，创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。见 <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository" target="_blank" rel="noopener">https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository</a><br>3.2.2.2 生成SSH添加到GitHub<br>回到你的git bash中，<br>git config –global user.name “yourname”<br>git config –global user.email “youremail”<br>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。<br>可以用以下两条，检查一下你有没有输对<br>git config user.name<br>git config user.email<br>然后创建SSH,一路回车<br>ssh-keygen -t rsa -C “youremail”<br>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。</p>
-<p>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
-<p>而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key<br>把你的id_rsa.pub里面的信息复制进去。<br>在gitbash中，查看是否成功<br>ssh -T <a href="mailto:git@github.com">git@github.com</a></p>
-<p>3.2.2.3 将hexo部署到GitHub<br>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件_config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
-<p>deploy:<br>  type: git<br>  repo: <a href="https://github.com/YourgithubName/YourgithubName.github.io.git" target="_blank" rel="noopener">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>  branch: master</p>
-<p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。<br>npm install hexo-deployer-git –save</p>
-<p>然后<br>hexo clean<br>hexo generate<br>hexo deploy</p>
-<p>其中 hexo clean清除了你之前生成的东西，也可以不加。<br>hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写<br>hexo deploy 部署文章，可以用hexo d缩写</p>
-<p>注意deploy时可能要你输入username和password。</p>
-<p>过一会儿就可以在<a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 这个网站看到你的博客了</p>
-<p>3.2.2.4 设置个人域名<br>现在你的个人网站的地址是 yourname.github.io，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。<br>注册一个阿里云账户,在阿里云上买一个域名，你需要先去进行实名认证,然后在域名控制台中，看到你购买的域名。使用电脑的命令提示符ping出你的网页的服务器地址，添加解析。</p>
+    未分类
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-Hexo" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Hexo建站查询手册
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/2020/07/04/Hexo/" class="article-date">
+         <time datetime="2020-07-04T07:40:07.000Z" itemprop="datePublished">2020-07-04</time>
+      </a>
+    </div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/manual/" rel="tag">manual</a>
+    </div>
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <p>去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。<br>主要参考资料：<br>Hexo官方文档 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a><br>Hexo史上最全搭建教程@zjufangzh <a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/article/details/82729029</a></p>
+<p>#S1 安装<br>包括运行所需要的软件Node.js和Git，可以额外选用一个代码编辑器（我选用了Atom）。然后使用代码安装Hexo程序，并完成初始化。具体可见Hexo官方文档<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
+<p>#S2 配置</p>
+<p>##2.1 一般配置，包括之后生成网页的站点名称、标签图标、网站描述等等。具体参数配置见官方文档 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration</a></p>
+<p>##2.2 特殊配置</p>
+<p>###2.2.1 主题 <a href="https://hexo.io/zh-cn/docs/themes" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/themes</a></p>
+<p>###2.2.2 永久链接 <a href="https://hexo.io/zh-cn/docs/permalinks" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/permalinks</a></p>
+<p>#S3 生成与部署</p>
+<p>##3.1 页面生成<br><code>$ hexo generate</code><br>简写为<br><code>$ hexo g</code><br>详见 <a href="https://hexo.io/zh-cn/docs/generating" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/generating</a><br>##3.2 部署</p>
+<p>###3.2.1 本地部署<br>安装 hexo-server<br><code>$ npm install hexo-server --save</code><br>部署<br><code>$ hexo server</code><br>详见 <a href="https://hexo.io/zh-cn/docs/server" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/server</a></p>
+<p>###3.2.2 部署到Github<br>本节摘编自：<a href="https://blog.csdn.net/sinat_37781304/java/article/details/82729029" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/java/article/details/82729029</a><br>（似乎这里并不是最早出处，暂不讨论）</p>
+<p>#####3.2.2.1 GitHub创建个人仓库<br>注册并登录GitHub账户，在GitHub.com中看到一个New repository，新建仓库，创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。见 <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository" target="_blank" rel="noopener">https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository</a></p>
+<p>#####3.2.2.2 生成SSH添加到GitHub<br>回到你的git bash中，<br><code>git config --global user.name &quot;yourname&quot;</code><br><code>git config --global user.email &quot;youremail&quot;</code><br>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。<br>可以用以下两条，检查一下你有没有输对<br><code>git config user.name</code><br><code>git config user.email</code><br>然后创建SSH,一路回车<br><code>ssh-keygen -t rsa -C &quot;youremail&quot;</code><br>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。<br>而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key<br>把你的id_rsa.pub里面的信息复制进去。<br>在gitbash中，查看是否成功<br><code>ssh -T git@github.com</code></p>
+<p>#####3.2.2.3 将hexo部署到GitHub<br>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件_config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;YourgithubName&#x2F;YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。<br><code>npm install hexo-deployer-git --save</code><br>然后</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>其中<code>hexo clean</code>清除了你之前生成的东西，也可以不加。<br><code>hexo generate</code>顾名思义，生成静态文章，可以用<code>hexo g</code>缩写<br><code>hexo deploy</code>部署文章，可以用<code>hexo d</code>缩写<br>注意deploy时可能要你输入username和password。<br>过一会儿就可以在<a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 这个网站看到你的博客了</p>
+<p>#####3.2.2.4 设置个人域名<br>现在你的个人网站的地址是 yourname.github.io，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。<br>注册一个阿里云账户,在阿里云上买一个域名，你需要先去进行实名认证,然后在域名控制台中，看到你购买的域名。使用电脑的命令提示符ping出你的网页的服务器地址，添加解析。</p>
 <p>登录GitHub，进入之前创建的仓库，点击settings，设置Custom domain，输入你的域名<br>然后在你的博客文件source中创建一个名为CNAME文件，不要后缀。写上你的域名。</p>
 <p>最后，在gitbash中，输入</p>
-<p>hexo clean<br>hexo g<br>hexo d<br>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
 
-      
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://mxuan.fun/2020/07/04/Hexo/" data-id="ckc7odjvv0002a0c65q5f1hra" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://mxuan.fun/2020/07/04/Hexo/" data-id="ckc7ldac10004ysc6dtuufcxt" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/manual/" rel="tag">manual</a></li></ul>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Mason Y."
+        },
+        "headline": "Hexo建站查询手册",
+        "image": "http://mxuan.fun",
+        "keywords": "manual",
+        "genre": "",
+        "datePublished": "2020-07-04",
+        "dateCreated": "2020-07-04",
+        "dateModified": "2020-07-04",
+        "url": "http://mxuan.fun/2020/07/04/Hexo/",
+        "description": "去年花了很多时间玩Hexo，半年没玩忘操作方法忘得一干二净……于是决定在这里整理一份教程以备将来之需。主要参考资料：Hexo官方文档 https://hexo.io/zh-cn/docs/Hexo史上最全搭建教程@zjufangzh https://blog.csdn.net/sinat_37781304/article/details/82729029
+#S1 安装包括运行所需要的软件Node.",
+        "wordCount": 151
+    }
+</script>
 
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2019/11/04/Recovery/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Recovery</div>
-    </a>
-  
-</nav>
-
-  
 </article>
 
-</section>
-        
-          <aside id="sidebar">
-  
+    <section id="comments">
     
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </div>
 
-  
+
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/diary/" rel="tag">diary</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/manual/" rel="tag">manual</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/" rel="tag">system</a></li></ul>
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+            
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/crispy-eureka" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
     </div>
-  </div>
-
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/diary/" style="font-size: 20px;">diary</a> <a href="/tags/manual/" style="font-size: 10px;">manual</a> <a href="/tags/system/" style="font-size: 10px;">system</a>
-    </div>
-  </div>
-
-  
+        
+<nav id="article-nav">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/07/04/Hexo/">Hexo建站查询手册</a>
-          </li>
-        
-          <li>
-            <a href="/2019/11/04/Recovery/">Recovery</a>
-          </li>
-        
-          <li>
-            <a href="/2019/11/02/Step-Two/">Step Two</a>
-          </li>
-        
-          <li>
-            <a href="/2019/10/29/Day-One/">Day One</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 Mason Y.<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+        <a href="/2019/11/04/Recovery/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Recovery</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
 </nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/diary/" style="font-size: 20px;">diary</a> <a href="/tags/manual/" style="font-size: 10px;">manual</a> <a href="/tags/system/" style="font-size: 10px;">system</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/07/04/Hexo/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2020/07/04/Hexo/" class="title">Hexo建站查询手册</a></p>
+                            <p class="item-date"><time datetime="2020-07-04T07:40:07.000Z" itemprop="datePublished">2020-07-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/11/04/Recovery/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/latespring.jpg)" alt="Recovery" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/11/04/Recovery/" class="title">Recovery</a></p>
+                            <p class="item-date"><time datetime="2019-11-04T15:27:40.000Z" itemprop="datePublished">2019-11-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/11/02/Step-Two/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/funonmonday.jpg)" alt="Step Two" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/11/02/Step-Two/" class="title">Step Two</a></p>
+                            <p class="item-date"><time datetime="2019-11-02T12:31:00.000Z" itemprop="datePublished">2019-11-02</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/10/29/Day-One/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/interstellar01.jpg)" alt="Day One" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/10/29/Day-One/" class="title">Day One</a></p>
+                            <p class="item-date"><time datetime="2019-10-29T15:40:07.000Z" itemprop="datePublished">2019-10-29</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io" target="_blank" rel="noopener">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2020 Mason Y.</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://mxuan.fun/2020/07/04/Hexo/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
 
 
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
 
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
 
-<script src="/js/script.js"></script>
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
 
 
 
+<!-- Custom Scripts -->
 
-  </div>
+<script src="/js/main.js"></script>
+
+
 </body>
 </html>
